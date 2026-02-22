@@ -48,13 +48,6 @@ h1, h2, h3, h4 {
   padding: 40px 0 20px 0;
 }
 
-.header-logo-img {
-  width: 32px;
-  height: auto;
-  object-fit: contain;
-  margin-left: 0; 
-}
-
 .header-flex {
   display: flex;
   align-items: center;
@@ -62,11 +55,28 @@ h1, h2, h3, h4 {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   font-size: 30px;
-  font-weight: 700;
-  color: #33322d;
+  font-weight: 800;
+  color: #435b49;
+  font-family: "Fixel Display", sans-serif;
 }
 
+.header-logo-img {
+  width: 32px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  top: 5px;
+}
+
+.header-logo-text {
+  position: relative;
+  top: -2px;
+  letter-spacing: -1px;
+}
 
 .header-nav {
   display: flex;
@@ -76,9 +86,11 @@ h1, h2, h3, h4 {
 
 .header-nav a {
   text-decoration: none;
-  color: #9a9a95;
+  color: #9a9a95; 
   font-size: 16px;
+  font-weight: 500;
   white-space: nowrap;
+  font-family: "Fixel Display", sans-serif;
 }
 
 .hero-flex {
@@ -100,6 +112,7 @@ h1, h2, h3, h4 {
   color: #33322d;
   margin-bottom: 25px;
   letter-spacing: -2px;
+  font-family: "Fixel Display", sans-serif;
 }
 
 .hero-text {
@@ -108,6 +121,7 @@ h1, h2, h3, h4 {
   line-height: 1.4;
   margin-bottom: 40px;
   max-width: 480px;
+  font-family: "Fixel Display", sans-serif;
 }
 
 .hero-image-box {
@@ -135,12 +149,19 @@ h1, h2, h3, h4 {
   font-size: 18px;
   font-weight: 600;
   cursor: pointer;
+  font-family: "Fixel Display", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #3e5242;
 }
 
 @media (max-width: 1024px) {
   .hero-title { font-size: 56px; }
   .hero-content { flex: 0 0 450px; }
   .hero-img { max-width: 400px; }
+  .header-flex { gap: 30px; }
 }
 
 .problems {
