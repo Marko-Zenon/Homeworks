@@ -904,3 +904,103 @@ h1, h2, h3, h4 {
     right: -80px;
   }
 }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 20px;
+  }
+  .header-flex {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .header-nav {
+    gap: 10px;
+    font-size: 14px;
+  }
+
+  .hero-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    flex: 0 0 auto;
+    width: 100%;
+    order: 2;
+  }
+
+  .hero-image-box {
+    order: 1;
+    margin-top: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero-img {
+    max-width: 280px;
+    margin-top: 0;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 16px;
+  }
+
+  .problems-grid {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  .problem-card {
+    padding: 25px;
+  }
+
+  .features-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .kit-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .kit-subgrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .review-card {
+    flex: 1 1 100%;
+    padding: 20px;
+  }
+
+  .footer-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-right, .footer-nav, .footer-email, .footer-copyright {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .problems-decor-img, 
+  .features-decor-img, 
+  .footer-decor-img {
+    display: none;
+  }
+}
